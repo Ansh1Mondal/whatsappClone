@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    /* background-color: rgb(30, 30, 30); */
+    background-image: linear-gradient(to bottom right, #380036,#0CBABA);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainbody{
+    background-color: white;
+    width: 95vw;
+    height: 85vh;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-rows: 3% 97%;
+}
+.topbar{
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.512);
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 20% 65% 5% 5% 5%;
+}
+.topheading{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+.topblank{
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+.btn1,.btn2,.btn3{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.btn1 :hover{
+    background-color: rgba(134, 145, 155, 0.601);
+    cursor: pointer;
+}
+.btn2 :hover{
+    background-color: rgba(134, 145, 155, 0.601);
+    cursor: pointer;
+}
+.btn3 :hover{
+    background-color: rgba(235, 109, 109, 0.601);
+    cursor: pointer;
+}
+.btn2{
+    scale: 0.8;
+}
+/* 
+.btn3{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+} */
+.navbar{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: white;
+    width: inherit;
+    height: inherit;
+}
+.left{
+    width: 100%;
+    height: 100%;
+    /* border-right: 2px solid gray; */
+    background-color: aliceblue;
+    /* box-shadow: 1px 1px 8px black; */
+    display: grid;
+    grid-template-rows: 15% 85%;
+    justify-items: center;
+    align-items: center;
+}
+.lefttop{
+    width: 95%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 50% 50% ;
+    /* background-color: aquamarine; */
+}
+.lefttop-up{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 50% 15% 15% ;
+    justify-items: center;
+    align-items: center;
+}
+.lefttop-down{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leftbottom{
+    /* padding-top: 1rem; */
+    width: 95%;
+    height: 100%;
+    /* background-color: beige; */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.leftbottom :nth-child(n):hover{
+    background-color: rgba(255, 251, 245, 0.729);
+    cursor: pointer;
+}
+.chatstab{
+    display: grid;
+    grid-template-columns: 15% 60% 25%;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.356);
+}
+
+.chats-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+.chats-1 svg{
+    width: 2rem;
+    height: 2rem;
+    margin: -1rem;
+    padding: -1rem;
+}
+.chats-2{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+}
+/* .chats-2 p{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    margin-bottom: -1rem;
+    padding-bottom: -1rem;
+} */
+.chats-head{
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: -1rem;
+    padding-bottom: -1rem;
+}
+.chats-tail{
+    top: 12.5rem;
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    font-size: 0.9rem;
+    margin-bottom: -1rem;
+    padding-bottom: -1rem;
+}
+
+.chats-3{
+    width: 100%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    color: blue;
+}
+.chats-time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: -1rem;
+    padding: -1rem;
+}
+.chats-notif{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: -1rem;
+    padding: -1rem;
+}
+.right{
+    width: 100%;
+    height: 100%;
+    /* border-right: 2px solid gray; */
+    background-color: azure;
+    /* box-shadow: 1px 1px 8px black; */
+    display: grid;
+    grid-template-rows: 12% 78% 10%;
+    justify-items: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #f6f0ea,#f1dfd1);
+    /* border: 2px solid black; */
+}
+.navright{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.521);
+    display: grid;
+    grid-template-columns: 24% 48% 7% 7% 7% 7%;
+}
+.right-name{
+    width: 100%;
+    height: 100%;
+    /* background-color: violet; */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+}
+.right-name-up{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    /* background-color: blue; */
+}
+.right-name-down{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    font-size: 1rem;
+    /* background-color: blue; */
+}
+.right-blank{
+    width: 100%;
+    height: 100%;
+    /* background-color: white; */
+}
+.right-btn1,.right-btn2,.right-btn3,.right-btn4{
+    /* background-color: indigo; */
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-btn2{
+    border-right: 1px solid rgba(0, 0, 0, 0.271);
+}
+.right-mssg{
+    width: 95%;
+    height: 95%;
+    /* background-color: violet; */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 8% 8% 28% 8% 40% 8%;
+}
+.mssg1,.mssg2,.mssg3,.mssg4,.mssg5,.mssg6{
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+}
+.mssg-ok{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 20%;
+    height: 90%;
+    background-color: rgb(255, 245, 234);
+    border-radius: 10px 10px 10px 0px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.516);
+}
+.mssg-ok p{
+    margin-left: 2rem;
+}
+.time1{
+    display: flex;
+    align-self: flex-end;
+    /* margin-left: 70%; */
+    font-size: 0.7rem;
+}
+.mssg2-para{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin-left: 40%;
+    width: 60%;
+    height: 90%;
+    background-color: rgb(221, 255, 171);
+    border-radius: 10px 10px 0px 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.516);
+
+}
+.mssg2-para p{
+    margin-left: 2rem;
+}
+.mssg3-para{display: grid;
+    grid-template-columns: 80% 20%;
+    margin-left: 55%;
+    width: 45%;
+    height: 90%;
+    background-color: rgb(221, 255, 171);
+    border-radius: 10px 10px 0px 10px;
+    /* display: flex; */
+    align-items: center;
+    justify-items: center;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.516);
+
+}
+.mssg3-box{
+    width: 80%;
+    height: 80%;
+    background-color: rgb(247, 255, 235);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+}
+.time3{
+    font-size: 0.7rem;
+    align-self: flex-end;
+}
+.box-up{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-items: center;
+    align-items: center;
+}
+.box-logo{
+    /* background-color: red; */
+    font-size: 2rem;
+}
+.box-para{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+    line-height: 1;
+}
+.box-down{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+}
+.box-btn1,.box-btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: green; */
+    width: 100%;
+    height: 100%;
+}
+.box-btn1 button{
+    background-color: rgb(237, 255, 211);
+    width: 90%;
+    height: 80%;
+    border: 1px solid green;
+}
+.box-btn2 button{
+    border: 1px solid green;
+    background-color: rgb(237, 255, 211);
+    width: 90%;
+    height: 80%;
+}
+.mssg4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mssg4 p{
+    font-size: 1.2rem;
+}
+.mssg5-para{
+    width: 30%;
+    height: 90%;
+    background-color: rgb(255, 245, 234);
+    border-radius: 10px 10px 10px 0px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80% 20%;
+    align-items: center;
+    justify-items: center;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.516);
+
+}
+.mssg5-img{
+    border-radius: 10px 10px 0px 0px ;
+    width: 95%;
+    height: 95%;
+    background-color: aqua;
+    margin-top: 0.5rem;
+}
+.mssg-image{
+    border-radius: 8px 8px 0px 0px ;
+    width: 100%;
+    height: 100%;
+}
+.mssg5-p{
+    margin-left: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    /* margin-right: 50%; */
+}
+.mssg6-para{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-left: 60%;
+    width: 40%;
+    height: 90%;
+    background-color: rgb(221, 255, 171);
+    border-radius: 10px 10px 0px 10px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.516);
+
+}
+.mssg6-para p{
+    margin-left: 2rem;
+}
+.textinp{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+    border: 1px solid rgba(0, 0, 0, 0.242);
+    display: grid;
+    grid-template-columns: 8% 8% 76% 8%;
+}
+.icon1,.icon2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    /* border: 2px solid black; */
+}
+.mssgwrite{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    /* border: 2px solid black; */
+}
+.mssgwritebox{
+    width: 100%;
+    height: 100%;
+}
+.sendbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua; */
+    /* border: 2px solid black; */
+}
